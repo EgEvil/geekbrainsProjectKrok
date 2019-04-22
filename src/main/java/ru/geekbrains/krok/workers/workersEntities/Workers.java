@@ -49,6 +49,13 @@ public class Workers {
         this.salary = salary;
     }
 
+    @Override
+    public String toString() {
+        return "\n ID: " + getId() + " Name: " + getName() + " Position: " + getPosition() + " Salary: " + getSalary();
+    }
+
+
+
 
 
 }

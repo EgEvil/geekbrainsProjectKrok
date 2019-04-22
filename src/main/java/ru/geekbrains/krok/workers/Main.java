@@ -1,8 +1,13 @@
 package ru.geekbrains.krok.workers;
 
+import org.apache.logging.log4j.LogManager;
 import ru.geekbrains.krok.workers.database.WorkersDB;
+import ru.geekbrains.krok.workers.workersEntities.Workers;
 
 
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -10,7 +15,8 @@ public class Main {
 
     static WorkersDB queries = new WorkersDB();
     static Scanner scanner = new Scanner(System.in);
-
+    static ResultSet rs = null;
+    static List<Workers> workersList = new ArrayList();
 
 
     public static void main(String[] args) {
@@ -29,16 +35,37 @@ public class Main {
                         queries.addEmployeeOtherInfo(cmd[1], cmd[2], cmd[3]);
                         break;
                     case "getEmployeeInfo":
-                        queries.getEmployeeInfo();
+                        rs = queries.getEmployeeInfo();
+                        while (rs.next()) {
+                            workersList.add(new Workers(rs.getInt("id"),
+                                    rs.getString("name"),
+                                    rs.getString("position"),
+                                    rs.getDouble("salary")));
+                        }
+                        System.out.println(workersList);
+
                         break;
                     case "getGetAvgSalaryForAll":
-                        queries.getGetAvgSalaryForAll();
+                        rs = queries.getGetAvgSalaryForAll();
+                        while (rs.next()) {
+                            System.out.println(rs.getDouble("AVG(salary)"));
+
+                        }
                         break;
                     case "getGetAvgSalaryForPosition":
-                        queries.getGetAvgSalaryForPosition(cmd[1]);
+                        rs = queries.getGetAvgSalaryForPosition(cmd[1]);
+                        while (rs.next()) {
+                            System.out.println(rs.getString("name") + rs.getDouble("AVG(salary)"));
+                        }
                         break;
                     case "searchEmployeeByPhone":
-                        queries.searchEmployeeByPhone(cmd[1]);
+                        rs = queries.searchEmployeeByPhone(cmd[1]);
+                        while (rs.next()) {
+                            System.out.println(rs.getInt("id") +
+                                    rs.getString("name") +
+                                    rs.getString("position") +
+                                    rs.getDouble("salary"));
+                        }
                         break;
                     case "help":
                         help();

@@ -21,3 +21,6 @@ INFO  2019-04-22 16:33:52 [main] ru.geekbrains.krok.workers.database.WorkersDB (
 INFO  2019-04-22 16:34:30 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:23) - Подключение создано успешно!
 INFO  2019-04-22 16:34:46 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:83) - Результат успешно выведен!
 INFO  2019-04-22 16:34:51 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:147) - Подключение разорвано успешно!
+INFO  2019-04-22 17:44:54 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:23) - Подключение создано успешно!
+INFO  2019-04-22 17:55:31 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:23) - Подключение создано успешно!
+INFO  2019-04-22 17:56:16 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:23) - Подключение создано успешно!

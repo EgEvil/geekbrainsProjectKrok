@@ -8,7 +8,6 @@ import ru.geekbrains.krok.workers.workersEntities.Workers;
 import java.sql.*;
 
 
-
 public class WorkersDB {
 
     Connection connection = null;
@@ -37,7 +36,7 @@ public class WorkersDB {
             pstm.setString(2, position);
             pstm.setDouble(3, salary);
             pstm.execute();
-            logger.info("addEmployee успешно отработал!");
+            logger.info("addEmployee успешно выполнен!");
 
         } catch (SQLException e) {
             logger.error("addEmployee завершился с ошибкой!");
@@ -56,7 +55,7 @@ public class WorkersDB {
             pstm.setString(2, phone);
             pstm.setString(3, address);
             pstm.execute();
-            logger.info("addEmployeeOtherInfo успешно отработал!");
+            logger.info("addEmployeeOtherInfo успешно выполнен!");
 
         } catch (SQLException e) {
             logger.error("addEmployeeOtherInfo завершился с ошибкой!");
@@ -67,69 +66,74 @@ public class WorkersDB {
     }
 
 
-    public void getEmployeeInfo() throws SQLException {
+    public ResultSet getEmployeeInfo() {
 
 
-        pstm = connection.prepareStatement("select * from employees");
-        rs = pstm.executeQuery();
-        while (rs.next()) {
-
-            System.out.println(rs.getInt("id") +
-                    rs.getString("name") +
-                    rs.getString("position") +
-                    rs.getDouble("salary"));
-
+        try {
+            pstm = connection.prepareStatement("select * from employees");
+            rs = pstm.executeQuery();
+            logger.info("getEmployeeInfo успешно выполнен!");
+        } catch (SQLException e) {
+            logger.error("getEmployeeInfo завершился с ошибкой!");
+            e.printStackTrace();
         }
-        logger.info("Результат успешно выведен!");
+        return rs;
 
-    }
-
-    public void getGetAvgSalaryForAll() throws SQLException {
-
-        pstm = connection.prepareStatement("select AVG(salary) from employees");
-        rs = pstm.executeQuery();
-        while (rs.next()) {
-            System.out.println(rs.getDouble("AVG(salary)"));
-
-        }
-        logger.info("Результат успешно выведен!");
 
     }
 
 
-    public void getGetAvgSalaryForPosition(String position) throws SQLException {
+    public ResultSet getGetAvgSalaryForAll() {
 
 
-        pstm = connection.prepareStatement("select name, AVG(salary) from employees e\n" +
-                "where position = ?\n" +
-                "group by name;");
-        pstm.setString(1, position);
-        rs = pstm.executeQuery();
-        while (rs.next()) {
-            System.out.println(rs.getString("name") + rs.getDouble("AVG(salary)"));
+        try {
+            pstm = connection.prepareStatement("select AVG(salary) from employees");
+            rs = pstm.executeQuery();
+            logger.info("getGetAvgSalaryForAll успешно выполнен!");
+        } catch (SQLException e) {
+            logger.error("getEmployeeInfo завершился с ошибкой!");
+            e.printStackTrace();
+        }
+
+        return rs;
+
+    }
+
+
+    public ResultSet getGetAvgSalaryForPosition(String position) {
+
+
+        try {
+            pstm = connection.prepareStatement("select name, AVG(salary) from employees e\n" +
+                    "where position = ?\n" +
+                    "group by name;");
+            pstm.setString(1, position);
+            rs = pstm.executeQuery();
+            logger.info("getGetAvgSalaryForPosition успешно выполнен!");
+        } catch (SQLException e) {
+            logger.error("getGetAvgSalaryForPosition завершился с ошибкой!");
+            e.printStackTrace();
 
         }
-        logger.info("Результат успешно выведен!");
+        return rs;
 
 
     }
 
-    public void searchEmployeeByPhone(String phone) throws SQLException {
+    public ResultSet searchEmployeeByPhone(String phone) throws SQLException {
 
-        pstm = connection.prepareStatement("select * from employees e\n" +
-                "left join otherinformation oi on e.id = oi.id\n" +
-                "where oi.phone like ?");
-        pstm.setString(1, phone + "%");
-        rs = pstm.executeQuery();
-
-        while (rs.next()) {
-            System.out.println(rs.getInt("id") +
-                    rs.getString("name") +
-                    rs.getString("position") +
-                    rs.getDouble("salary"));
-
+        try {
+            pstm = connection.prepareStatement("select * from employees e\n" +
+                    "left join otherinformation oi on e.id = oi.id\n" +
+                    "where oi.phone like ?");
+            pstm.setString(1, phone + "%");
+            rs = pstm.executeQuery();
+            logger.info("searchEmployeeByPhone успешно выполнен!");
+        } catch (SQLException e) {
+            logger.error("searchEmployeeByPhone завершился с ошибкой!");
+            e.printStackTrace();
         }
-        logger.info("Результат успешно выведен!");
+        return rs;
     }
 
     public void disconnect() {
@@ -147,6 +151,7 @@ public class WorkersDB {
             logger.info("Подключение разорвано успешно!");
 
         } catch (SQLException e) {
+            logger.error("Возникли проблемы при разрыве подключения!");
             e.printStackTrace();
         }
     }
