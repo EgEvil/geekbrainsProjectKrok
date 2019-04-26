@@ -7,14 +7,17 @@ public class Workers {
     String position;
     double salary;
 
-
-    public Workers(int id, String name, String position, double salary) {
-        this.id = id;
-        this.name = name;
-        this.position = position;
-        this.salary = salary;
+    public Workers() {
 
     }
+
+
+//    public Workers(int id, String name, String position, double salary) {
+//        this.id = id;
+//        this.name = name;
+//        this.position = position;
+//        this.salary = salary;
+//        }
 
 
     public int getId() {
