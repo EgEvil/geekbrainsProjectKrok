@@ -76,10 +76,10 @@ public class WorkersDB {
 
     }
 
-//    public void addToDataBaseFromJson() throws IOException {
-//
-//
-//    }
+    public void addToDataBaseFromJson() throws IOException {
+
+
+    }
 
     public void addToJsonFromDataBase(List<Workers> workersList) {
 

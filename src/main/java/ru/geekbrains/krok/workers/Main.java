@@ -23,14 +23,14 @@ public class Main {
                 String[] cmd = in.split(", ");
                 switch (cmd[0]) {
                     case "addEmployee":
-                        System.out.println(queries.addEmployee(cmd[1], cmd[2], Double.valueOf(cmd[3])));
+                      queries.addEmployee(cmd[1], cmd[2], Double.valueOf(cmd[3]));
                         break;
                     case "addEmployeeOtherInfo":
                         queries.addEmployeeOtherInfo(cmd[1], cmd[2], cmd[3]);
                         break;
-                    case "addToDataBaseFromJson":
-                        queries.addToDataBaseFromJson();
-                        break;
+//                    case "addToDataBaseFromJson":
+//                        queries.addToDataBaseFromJson();
+//                        break;
                     case "addToJsonFromDataBase":
                         queries.addToJsonFromDataBase(queries.getEmployeeInfo());
                         break;
