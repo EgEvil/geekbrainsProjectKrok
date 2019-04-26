@@ -1,11 +1,5 @@
-[ {
-  "id" : 1,
-  "name" : "Artem",
-  "position" : "QA Engineer",
+{
+  "name" : "Daniil",
+  "position" : "Junior Developer",
   "salary" : 40000.0
-}, {
-  "id" : 1,
-  "name" : "Gleb",
-  "position" : "Designer",
-  "salary" : 35000.0
-} ]
+}

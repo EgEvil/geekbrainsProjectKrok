@@ -2,9 +2,9 @@ package ru.geekbrains.krok.workers.workersEntities;
 
 public class OtherInformation {
 
-    int id;
-    String phone;
-    String address;
+    private int id;
+    private String phone;
+    private String address;
 
     public OtherInformation() {
     }

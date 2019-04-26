@@ -122,3 +122,45 @@ INFO  2019-04-26 11:44:30 [main] ru.geekbrains.krok.workers.database.WorkersDB (
 INFO  2019-04-26 11:44:30 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:96) - addToJsonFromDataBase успешно выполнен!
 ERROR 2019-04-26 11:44:30 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:101) - addToJsonFromDataBase завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `ru.geekbrains.krok.workers.workersEntities.Workers` out of START_ARRAY token
  at [Source: (File); line: 1, column: 1]
+INFO  2019-04-26 12:02:59 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:03:01 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:123) - getEmployeeInfo успешно выполнен!
+ERROR 2019-04-26 12:03:01 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:100) - addToJsonFromDataBase завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `ru.geekbrains.krok.workers.workersEntities.Workers` out of START_ARRAY token
+ at [Source: (File); line: 1, column: 1]
+INFO  2019-04-26 12:07:15 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:07:30 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:123) - getEmployeeInfo успешно выполнен!
+ERROR 2019-04-26 12:07:30 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:100) - addToJsonFromDataBase завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `ru.geekbrains.krok.workers.workersEntities.Workers` out of START_ARRAY token
+ at [Source: (File); line: 1, column: 1]
+INFO  2019-04-26 12:08:43 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:08:47 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:123) - getEmployeeInfo успешно выполнен!
+ERROR 2019-04-26 12:08:47 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:100) - addToJsonFromDataBase завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `ru.geekbrains.krok.workers.workersEntities.Workers` out of START_ARRAY token
+ at [Source: (File); line: 1, column: 1]
+INFO  2019-04-26 12:10:28 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:10:30 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:123) - getEmployeeInfo успешно выполнен!
+ERROR 2019-04-26 12:10:30 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:100) - addToJsonFromDataBase завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `ru.geekbrains.krok.workers.workersEntities.Workers` out of START_ARRAY token
+ at [Source: (File); line: 1, column: 1]
+INFO  2019-04-26 12:13:40 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:13:45 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:123) - getEmployeeInfo успешно выполнен!
+INFO  2019-04-26 12:13:45 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:98) - addToJsonFromDataBase успешно выполнен!
+INFO  2019-04-26 12:14:19 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:14:23 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:123) - getEmployeeInfo успешно выполнен!
+INFO  2019-04-26 12:14:23 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:98) - addToJsonFromDataBase успешно выполнен!
+INFO  2019-04-26 12:15:47 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:15:48 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:123) - getEmployeeInfo успешно выполнен!
+INFO  2019-04-26 12:15:48 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:98) - addToJsonFromDataBase успешно выполнен!
+INFO  2019-04-26 12:16:27 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:123) - getEmployeeInfo успешно выполнен!
+ERROR 2019-04-26 12:16:27 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:100) - addToJsonFromDataBase завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `ru.geekbrains.krok.workers.workersEntities.Workers` out of START_ARRAY token
+ at [Source: (File); line: 1, column: 1]
+INFO  2019-04-26 12:20:40 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:20:58 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:123) - getEmployeeInfo успешно выполнен!
+ERROR 2019-04-26 12:20:59 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:100) - addToJsonFromDataBase завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `int` out of START_OBJECT token
+ at [Source: (File); line: 1, column: 2] (through reference chain: ru.geekbrains.krok.workers.workersEntities.Workers["id"])
+INFO  2019-04-26 12:30:11 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:33:55 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:40:32 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:40:34 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:90) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 12:40:41 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:132) - getEmployeeInfo успешно выполнен!
+INFO  2019-04-26 12:43:53 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:43:55 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:154) - getGetAvgSalaryForAll успешно выполнен!
+INFO  2019-04-26 12:45:11 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:30) - Подключение создано успешно!
+INFO  2019-04-26 12:45:23 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:90) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 12:45:37 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:132) - getEmployeeInfo успешно выполнен!

@@ -1,11 +1,12 @@
 package ru.geekbrains.krok.workers.workersEntities;
 
+
 public class Workers {
 
-    int id;
-    String name;
-    String position;
-    double salary;
+    private int id;
+    private String name;
+    private String position;
+    private double salary;
 
     public Workers() {
 
@@ -24,7 +25,7 @@ public class Workers {
         return name;
     }
 
-    public void setName(String name) {
+     public void setName(String name) {
         this.name = name;
     }
 

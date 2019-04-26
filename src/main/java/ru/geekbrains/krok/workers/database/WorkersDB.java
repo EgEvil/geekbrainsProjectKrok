@@ -39,7 +39,6 @@ public class WorkersDB {
     public void addEmployee(String name, String position, double salary) {
 
 
-
         try {
             pstm = connection.prepareStatement("Insert into employees (name, position, salary) values (?,?,?)");
             pstm.setString(1, name);
@@ -77,9 +76,24 @@ public class WorkersDB {
     }
 
     public void addToDataBaseFromJson() throws IOException {
+        ObjectMapper workersMapper = new ObjectMapper();
+        Workers worker = workersMapper.readValue(new File("workersToDB.json"), Workers.class);
+
+        try {
 
 
+            pstm = connection.prepareStatement("Insert into employees (name, position, salary) values (?,?,?)");
+            pstm.setString(1, worker.getName());
+            pstm.setString(2, worker.getPosition());
+            pstm.setDouble(3, worker.getSalary());
+            pstm.execute();
+            logger.info("addToDataBaseFromJson успешно выполнен!");
+        } catch (SQLException e) {
+            logger.error("addToDataBaseFromJson завершился с ошибкой! " + e);
+
+        }
     }
+
 
     public void addToJsonFromDataBase(List<Workers> workersList) {
 
@@ -126,7 +140,7 @@ public class WorkersDB {
     }
 
 
-    public double getGetAvgSalaryForAll() {
+    public double getAvgSalaryForAll() {
 
         Workers workers = null;
         try {
@@ -147,7 +161,7 @@ public class WorkersDB {
     }
 
 
-    public void getGetAvgSalaryForPosition(String position) {
+    public void getAvgSalaryForPosition(String position) {
 
 
         try {
