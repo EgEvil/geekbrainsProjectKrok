@@ -1,1 +1,31 @@
-[ [ 1, "Ivan", "Developer", 30000.0 ], [ 2, "Ivan", "QA Engineer", 40000.0 ], [ 3, "Petr", "Designer", 35000.0 ], [ 4, "Vlad", "DevOps", 50000.0 ] ]
+[ {
+  "id" : 1,
+  "name" : "Ivan",
+  "position" : "Developer",
+  "salary" : 30000.0
+}, {
+  "id" : 2,
+  "name" : "Ivan",
+  "position" : "QA Engineer",
+  "salary" : 40000.0
+}, {
+  "id" : 3,
+  "name" : "Petr",
+  "position" : "Designer",
+  "salary" : 35000.0
+}, {
+  "id" : 4,
+  "name" : "Vlad",
+  "position" : "DevOps",
+  "salary" : 50000.0
+}, {
+  "id" : 5,
+  "name" : "Artem",
+  "position" : "QA Engineer",
+  "salary" : 40000.0
+}, {
+  "id" : 6,
+  "name" : "Daniil",
+  "position" : "Junior Developer",
+  "salary" : 40000.0
+} ]

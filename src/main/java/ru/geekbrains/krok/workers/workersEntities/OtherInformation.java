@@ -33,4 +33,9 @@ public class OtherInformation {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "\n ID: " + getId() + " Phone: " + getPhone() + " Address: " + getAddress();
+    }
 }

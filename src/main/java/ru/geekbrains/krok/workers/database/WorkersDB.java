@@ -24,6 +24,10 @@ public class WorkersDB {
     private static final Logger logger = LogManager.getLogger(Workers.class.getName());
 
     public WorkersDB() {
+
+    }
+
+    public Connection connectToDB() {
         try {
             Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection("jdbc:sqlite:workers.db");
@@ -34,6 +38,7 @@ public class WorkersDB {
 
 
         }
+        return connection;
     }
 
     public void addEmployee(String name, String position, double salary) {

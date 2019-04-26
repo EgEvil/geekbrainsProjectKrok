@@ -17,6 +17,7 @@ public class Main {
         while (true) {
             try {
 
+                queries.connectToDB();
                 System.out.println("Введите команду и параметры(Пример: cmd, 2, 4): ");
                 String in = scanner.nextLine();
                 String[] cmd = in.split(", ");
