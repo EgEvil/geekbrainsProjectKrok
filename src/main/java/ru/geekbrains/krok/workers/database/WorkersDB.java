@@ -86,8 +86,7 @@ public class WorkersDB {
 
             ObjectMapper workersMapper = new ObjectMapper();
             Workers worker = workersMapper.readValue(new File("workersToDB.json"), Workers.class);
-            List<Workers> workersList = new ArrayList<>();
-            workersList.add(worker);
+            
 
             addEmployee(worker.getName(), worker.getPosition(), worker.getSalary());
 
