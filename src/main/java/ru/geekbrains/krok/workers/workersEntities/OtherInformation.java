@@ -9,11 +9,6 @@ public class OtherInformation {
     public OtherInformation() {
     }
 
-//    public OtherInformation(int id, String phone, String address) {
-//        this.id = id;
-//        this.phone = phone;
-//        this.address = address;
-//    }
 
     public int getId() {
         return id;

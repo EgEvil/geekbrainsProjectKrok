@@ -12,14 +12,6 @@ public class Workers {
     }
 
 
-//    public Workers(int id, String name, String position, double salary) {
-//        this.id = id;
-//        this.name = name;
-//        this.position = position;
-//        this.salary = salary;
-//        }
-
-
     public int getId() {
         return id;
     }
@@ -56,9 +48,6 @@ public class Workers {
     public String toString() {
         return "\n ID: " + getId() + " Name: " + getName() + " Position: " + getPosition() + " Salary: " + getSalary();
     }
-
-
-
 
 
 }
