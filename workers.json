@@ -1,0 +1,21 @@
+[ {
+  "id" : 1,
+  "name" : "Ivan",
+  "position" : "Developer",
+  "salary" : 30000.0
+}, {
+  "id" : 2,
+  "name" : "Ivan",
+  "position" : "QA Engineer",
+  "salary" : 40000.0
+}, {
+  "id" : 3,
+  "name" : "Petr",
+  "position" : "Designer",
+  "salary" : 35000.0
+}, {
+  "id" : 4,
+  "name" : "Vlad",
+  "position" : "DevOps",
+  "salary" : 50000.0
+} ]

@@ -1,0 +1,9 @@
+[ {
+  "name" : "Artem",
+  "position" : "QA Engineer",
+  "salary" : 40000.0
+}, {
+  "name" : "Gleb",
+  "position" : "Designer",
+  "salary" : 35000.0
+} ]
