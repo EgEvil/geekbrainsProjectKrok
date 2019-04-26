@@ -170,3 +170,7 @@ INFO  2019-04-26 12:53:29 [main] ru.geekbrains.krok.workers.database.WorkersDB (
 INFO  2019-04-26 12:53:39 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:137) - getEmployeeInfo успешно выполнен!
 INFO  2019-04-26 12:53:39 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:112) - addToJsonFromDataBase успешно выполнен!
 INFO  2019-04-26 12:53:39 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+INFO  2019-04-26 13:05:34 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+INFO  2019-04-26 13:05:37 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:53) - addEmployee успешно выполнен!
+INFO  2019-04-26 13:05:37 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:94) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 13:05:37 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!

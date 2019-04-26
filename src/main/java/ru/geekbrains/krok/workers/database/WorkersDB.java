@@ -80,20 +80,19 @@ public class WorkersDB {
 
     }
 
-    public void addToDataBaseFromJson() throws IOException {
-        ObjectMapper workersMapper = new ObjectMapper();
-        Workers worker = workersMapper.readValue(new File("workersToDB.json"), Workers.class);
+    public void addToDataBaseFromJson() {
 
         try {
 
+            ObjectMapper workersMapper = new ObjectMapper();
+            Workers worker = workersMapper.readValue(new File("workersToDB.json"), Workers.class);
+            List<Workers> workersList = new ArrayList<>();
+            workersList.add(worker);
 
-            pstm = connection.prepareStatement("Insert into employees (name, position, salary) values (?,?,?)");
-            pstm.setString(1, worker.getName());
-            pstm.setString(2, worker.getPosition());
-            pstm.setDouble(3, worker.getSalary());
-            pstm.execute();
+            addEmployee(worker.getName(), worker.getPosition(), worker.getSalary());
+
             logger.info("addToDataBaseFromJson успешно выполнен!");
-        } catch (SQLException e) {
+        } catch (IOException e) {
             logger.error("addToDataBaseFromJson завершился с ошибкой! " + e);
 
         }
