@@ -1,5 +1,9 @@
-{
-  "name" : "Daniil",
+[ {
+  "name" : "Egor",
+  "position" : "QA Engineer",
+  "salary" : 40000.0
+}, {
+  "name" : "Vasilii",
   "position" : "Junior Developer",
   "salary" : 40000.0
-}
+} ]

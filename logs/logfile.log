@@ -174,3 +174,53 @@ INFO  2019-04-26 13:05:34 [main] ru.geekbrains.krok.workers.database.WorkersDB (
 INFO  2019-04-26 13:05:37 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:53) - addEmployee успешно выполнен!
 INFO  2019-04-26 13:05:37 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:94) - addToDataBaseFromJson успешно выполнен!
 INFO  2019-04-26 13:05:37 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+INFO  2019-04-26 13:29:49 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+ERROR 2019-04-26 13:29:52 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:98) - addToDataBaseFromJson завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `ru.geekbrains.krok.workers.workersEntities.Workers` out of START_ARRAY token
+ at [Source: (File); line: 1, column: 1]
+INFO  2019-04-26 13:29:52 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+ERROR 2019-04-26 13:30:04 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:98) - addToDataBaseFromJson завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `ru.geekbrains.krok.workers.workersEntities.Workers` out of START_ARRAY token
+ at [Source: (File); line: 1, column: 1]
+INFO  2019-04-26 13:30:04 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+ERROR 2019-04-26 13:30:14 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:98) - addToDataBaseFromJson завершился с ошибкой! com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `ru.geekbrains.krok.workers.workersEntities.Workers` out of START_ARRAY token
+ at [Source: (File); line: 1, column: 1]
+INFO  2019-04-26 13:30:14 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+INFO  2019-04-26 13:32:42 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+INFO  2019-04-26 13:32:43 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+ERROR 2019-04-26 13:32:46 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:98) - addToDataBaseFromJson завершился с ошибкой! com.fasterxml.jackson.core.JsonParseException: Unexpected character ('{' (code 123)): was expecting double-quote to start field name
+ at [Source: (File); line: 1, column: 4]
+INFO  2019-04-26 13:32:46 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:34) - Подключение создано успешно!
+INFO  2019-04-26 13:39:46 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:39:49 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:98) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 13:39:49 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:43:23 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:43:26 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:105) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 13:43:26 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:48:38 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:48:42 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:106) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 13:48:42 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:54:13 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:54:14 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:107) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 13:54:14 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:54:37 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:54:37 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 13:54:39 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:107) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 13:54:39 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:36) - Подключение создано успешно!
+INFO  2019-04-26 14:28:09 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:28:12 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:28:21 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:28:52 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:161) - getEmployeeInfo успешно выполнен!
+INFO  2019-04-26 14:28:52 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:28:59 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:31:51 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+ERROR 2019-04-26 14:32:04 [main] ru.geekbrains.krok.workers.Main (Main.java:64) - Произошла ошибка! java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to ru.geekbrains.krok.workers.workersEntities.Workers
+INFO  2019-04-26 14:32:04 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:33:15 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:33:16 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:105) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 14:33:16 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:35:56 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:35:59 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:54) - addEmployee успешно выполнен!
+INFO  2019-04-26 14:35:59 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:54) - addEmployee успешно выполнен!
+INFO  2019-04-26 14:35:59 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:96) - addToDataBaseFromJson успешно выполнен!
+INFO  2019-04-26 14:35:59 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!
+INFO  2019-04-26 14:36:18 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:140) - getEmployeeInfo успешно выполнен!
+INFO  2019-04-26 14:36:18 [main] ru.geekbrains.krok.workers.database.WorkersDB (WorkersDB.java:35) - Подключение создано успешно!

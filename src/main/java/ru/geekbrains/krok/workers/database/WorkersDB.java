@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 
 
 public class WorkersDB {
@@ -85,16 +86,20 @@ public class WorkersDB {
         try {
 
             ObjectMapper workersMapper = new ObjectMapper();
-            Workers worker = workersMapper.readValue(new File("workersToDB.json"), Workers.class);
-            
+            Workers[] workersList = workersMapper.readValue(new File("workersToDB.json"), Workers[].class);
 
-            addEmployee(worker.getName(), worker.getPosition(), worker.getSalary());
+            for (Workers addWorker : workersList) {
+                addEmployee(addWorker.getName(), addWorker.getPosition(), addWorker.getSalary());
+
+            }
 
             logger.info("addToDataBaseFromJson успешно выполнен!");
-        } catch (IOException e) {
+        } catch (
+                IOException e) {
             logger.error("addToDataBaseFromJson завершился с ошибкой! " + e);
 
         }
+
     }
 
 

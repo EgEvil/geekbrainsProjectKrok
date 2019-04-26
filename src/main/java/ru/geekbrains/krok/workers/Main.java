@@ -1,7 +1,10 @@
 package ru.geekbrains.krok.workers;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.geekbrains.krok.workers.database.WorkersDB;
+import ru.geekbrains.krok.workers.workersEntities.Workers;
 
 import java.util.Scanner;
 
@@ -10,6 +13,7 @@ public class Main {
 
     static WorkersDB queries = new WorkersDB();
     static Scanner scanner = new Scanner(System.in);
+    private static final Logger logger = LogManager.getLogger(Main.class.getName());
 
 
     public static void main(String[] args) {
@@ -57,7 +61,8 @@ public class Main {
                         break;
                 }
             } catch (Exception e) {
-                System.out.println("Команды не существует! Для получения списка команда введите 'help'.");
+                logger.error("Произошла ошибка! " + e);
+                System.out.println("Команды не существует! Для получения списка команда введите 'help'");
 
             }
 
